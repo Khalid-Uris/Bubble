@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93DE188E-2621-4F7F-B947-E0A29F8A8E98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bubble</RootNamespace>
+    <AssemblyName>Bubble</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllTimeMedals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllTimeMedals.Designer.cs">
+      <DependentUpon>AllTimeMedals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AthleteMedals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AthleteMedals.Designer.cs">
+      <DependentUpon>AthleteMedals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDconnection.cs" />
+    <Compile Include="ColunmnsChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColunmnsChart.Designer.cs">
+      <DependentUpon>ColunmnsChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database.Designer.cs">
+      <DependentUpon>Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyProgressBar.Designer.cs">
+      <DependentUpon>MyProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P2_DataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>P2_DataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="P2_DataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>P2_DataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="P2_DataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>P2_DataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="P2_DataDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>P2_DataDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="P2_DataDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>P2_DataDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="P2_DataDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>P2_DataDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WelcomeFome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeFome.Designer.cs">
+      <DependentUpon>WelcomeFome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllTimeMedals.resx">
+      <DependentUpon>AllTimeMedals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AthleteMedals.resx">
+      <DependentUpon>AthleteMedals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColunmnsChart.resx">
+      <DependentUpon>ColunmnsChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database.resx">
+      <DependentUpon>Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WelcomeFome.resx">
+      <DependentUpon>WelcomeFome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="P2_DataDataSet.xsc">
+      <DependentUpon>P2_DataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>P2_DataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="P2_DataDataSet.xss">
+      <DependentUpon>P2_DataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet1.xsc">
+      <DependentUpon>P2_DataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>P2_DataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="P2_DataDataSet1.xss">
+      <DependentUpon>P2_DataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet2.xsc">
+      <DependentUpon>P2_DataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>P2_DataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="P2_DataDataSet2.xss">
+      <DependentUpon>P2_DataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet3.xsc">
+      <DependentUpon>P2_DataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>P2_DataDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="P2_DataDataSet3.xss">
+      <DependentUpon>P2_DataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet4.xsc">
+      <DependentUpon>P2_DataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>P2_DataDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="P2_DataDataSet4.xss">
+      <DependentUpon>P2_DataDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet5.xsc">
+      <DependentUpon>P2_DataDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="P2_DataDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>P2_DataDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="P2_DataDataSet5.xss">
+      <DependentUpon>P2_DataDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
